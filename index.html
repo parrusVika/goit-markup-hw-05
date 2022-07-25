@@ -23,15 +23,16 @@
     <!-- Castom styles -->
 </head>
 
-<body class="body">
+<body data-page class="body no-scroll">
     <!--Header-->
-    <header class="header">
+    <header class="header" data-header>
         <div class="header-container">
             <nav class="header-nav">
                 <a class="header-logo" href="/">Web<span class="logo-studio">Studio</span></a>
                 <ul class="header-link">
                     <li class="header-item">
-                        <a class="header-studio" href="Студия">Студия</a>
+
+                        <a class="header-studio header-studio-current" href="Студия">Студия</a>
                     </li>
                     <li class="header-item">
                         <a class="header-portfolio" href="./portfolio.html">Портфолио</a>
@@ -60,7 +61,8 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="hero-button" type="button">Заказать услугу</button>
+                <button data-modal-open class="hero-button" type="button">Заказать услугу</button>
+
             </div>
         </section>
         <!--About-->
@@ -350,6 +352,19 @@
             </div>
         </section>
     </footer>
+    <!-- Modal window -->
+    <div class="bakdrop is-hidden" data-modal>
+        <div class="modal">
+            <button data-modal-close class="modal-btn" type="button"><svg class="modal-btn-icon" width="18px"
+                    height="18px">
+                    <use href="./images/symbol-defs.svg#icon-clouse"></use>
+
+
+                </svg></button>
+        </div>
+    </div>
+    <script src="./js/header-scroll.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
