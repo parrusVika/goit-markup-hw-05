@@ -346,6 +346,8 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 
+    padding: 40px;
+
     height: 581px;
     width: 528px;
     border-radius: 4px;
@@ -370,6 +372,152 @@ img {
     cursor: pointer;
 }
 
+.modal-form {
+    text-align: center;
+}
+
+.modal-for-strong {
+    display: block;
+    margin-bottom: 12px;
+
+    font-family: var(--main-font);
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23/20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.modal-for-label {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* .modal-for-icon:hover,
+.modal-for-icon:focus {
+    fill: var(--accent-color);
+} */
+
+.modal-for-icon:placeholder-shown {
+    fill: #212121;
+}
+
+.modal-for-icon:not(:placeholder-shown) {
+    fill: var(--accent-color);
+}
+
+.modal-for-input:placeholder-shown {
+    border-color: rgba(33, 33, 33, 0.2);
+}
+
+.modal-for-input:hover+.modal-for-label,
+.modal-for-input:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+
+}
+
+.modal-for-span {
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    margin-bottom: 4px;
+
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14/12);
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.modal-for-input {
+    min-width: 448px;
+    min-height: 40px;
+    border-radius: 4px;
+    padding-left: 35px;
+
+}
+
+.modal-for-icon {
+    position: absolute;
+    top: 30px;
+    left: 12px;
+}
+
+.modal-for-texterea {
+    resize: none;
+    border-radius: 4px;
+    min-width: 448px;
+    min-height: 120px;
+    padding: 12px 16px;
+}
+
+.modal-for-texterea:focus+.modal-for-label,
+.modal-for-texterea:not(:placeholder-shown) {
+    border-color: var(--accent-color);
+}
+
+.visualy-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.checkbox {
+    padding-left: 52px;
+}
+
+.checkbox:checked+.modal-for-checkicon .modal-check {
+    opacity: 1;
+    fill: var(--accent-color);
+}
+
+.checkbox:checked+.modal-for-checkicon .modal-uncheck {
+    opacity: 0;
+}
+
+.modal-uncheck {}
+
+.modal-check {
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: var(--animation);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal-a-span {
+    user-select: none;
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: calc(24/14);
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-link {
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.modal-for-submit {
+    display: inline-block;
+    min-height: 50px;
+    min-width: 200px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
 
 /* About */
 
@@ -759,6 +907,61 @@ img {
 .footer-icon {
     fill: currentColor;
 
+}
+
+.footer-email-form {
+    display: block;
+
+    margin-left: 93px;
+}
+
+.footer-email-strong {
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.06em;
+    color: var(--light-bg-cl);
+}
+
+.footer-form {
+    position: relative;
+    display: flex;
+}
+
+.footer-label {
+    display: block;
+}
+
+.footer-input {
+    display: block;
+    min-width: 358px;
+    min-height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+}
+
+.footer-btn-form {
+    display: inline-block;
+    margin-left: 12px;
+    min-height: 50px;
+    min-width: 200px;
+    color: #FFFFFF;
+    border-radius: 4px;
+    border: 0;
+    background-color: #2196F3;
+}
+
+.footer-btn-icon {
+    position: absolute;
+    fill: #FFFFFF;
+    right: 28px;
+    bottom: 13px;
 }
 
 /* portfolio.html */

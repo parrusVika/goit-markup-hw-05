@@ -349,18 +349,73 @@
                             </a></li>
                     </ul>
                 </div>
+                <div class="footer-email-form">
+                    <h2 class="footer-email-strong">Подпишитесь на рассылку</h2>
+                    <form class="footer-form">
+                        <label class="footer-label">
+                            <input class="footer-input" type="text" placeholder="E-mail">
+                        </label>
+                        <button class="footer-btn-form" type="button">Подписаться</button>
+                        <svg class="footer-btn-icon" width="24px" height="24px">
+                            <use href="./images/symbol-defs.svg#icon-send-1"></use>
+                        </svg>
+                    </form>
+                </div>
             </div>
         </section>
     </footer>
     <!-- Modal window -->
     <div class="bakdrop is-hidden" data-modal>
         <div class="modal">
-            <button data-modal-close class="modal-btn" type="button"><svg class="modal-btn-icon" width="18px"
-                    height="18px">
+            <button data-modal-close class="modal-btn" type="button">
+                <svg class="modal-btn-icon" width="18px" height="18px">
                     <use href="./images/symbol-defs.svg#icon-clouse"></use>
-
-
                 </svg></button>
+            <form class="modal-form" name="modal-form" autocomplete="off">
+                <strong class="modal-for-strong">Оставьте свои данные, мы вам перезвоним</strong>
+                <div role="group">
+                    <label class="modal-for-label">
+                        <span class="modal-for-span">Имя</span>
+                        <input class="modal-for-input" type="text" name="user-name" placeholder="Alex Black">
+                        <svg class="modal-for-icon" width="12px" height="12px">
+                            <use href="./images/symbol-defs.svg#icon-Name-1"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-for-label">
+                        <span class="modal-for-span">Телефон</span>
+                        <input class="modal-for-input" type="tel" name="user-phone" placeholder="+38(067)1234576">
+                        <svg class="modal-for-icon" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#icon-phone-1"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-for-label">
+                        <span class="modal-for-span">Почта</span>
+                        <input class="modal-for-input" type="email" name="" placeholder="alexblack@gmail.com">
+                        <svg class="modal-for-icon" width="18px" height="18px">
+                            <use href="./images/symbol-defs.svg#icon-email-1"></use>
+                        </svg>
+                    </label>
+                    <label class="modal-for-label">
+                        <span class="modal-for-span">Комментарий</span>
+                        <textarea class="modal-for-texterea" name="" id="" cols="30"
+                            placeholder="Введите текст"></textarea>
+                    </label>
+                    <Label class="modal-for-label">
+                        <input class="checkbox visualy-hidden" type="checkbox" value="Условия
+                            договора">
+                        <svg class="modal-for-checkicon" width="16px" height="15px">
+                            <use class="modal-uncheck" href="./images/symbol-defs.svg#icon-Vector-3-1"></use>
+                            <use class="modal-check" href="./images/symbol-defs.svg#icon-check-2"></use>
+                        </svg>
+                        <span class="modal-a-span">Соглашаюсь с рассылкой и принимаю <a class="modal-link"
+                                href="">Условия
+                                договора
+                            </a>
+                        </span>
+                    </Label>
+                </div>
+                <button class="modal-for-submit" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/header-scroll.js"></script>
